@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Manav Kalyan Foundation</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" type="image/x-icon" href="./images/favicon.png">
+
+
+  <link href="https://fonts.googleapis.com/css?family=Mansalva|Roboto&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+  <link rel="stylesheet" href="css/aos.css">
+
+  <!-- MAIN CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Dropdown Button */
+    .dropbtn {
+      background-color: transparent;
+      color: white;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+    }
+
+    /* The container <div> - needed to position the dropdown content */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    /* Dropdown Content (Hidden by Default) */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    /* Links inside the dropdown */
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    /* Change color of dropdown links on hover */
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    /* Change the background color of the dropdown button when the dropdown content is shown */
+    .dropdown:hover .dropbtn {
+      background-color: transparent;
+    }
+
+    @import url(https://fonts.googleapis.com/css?family=Istok+Web);
+
+    @keyframes slidy {
+      0% {
+        left: 0%;
+      }
+
+      20% {
+        left: 0%;
+      }
+
+      25% {
+        left: -100%;
+      }
+
+      45% {
+        left: -100%;
+      }
+
+      50% {
+        left: -200%;
+      }
+
+      70% {
+        left: -200%;
+      }
+
+      75% {
+        left: -300%;
+      }
+
+      95% {
+        left: -300%;
+      }
+
+      100% {
+        left: -400%;
+      }
+    }
+
+
+    div#captioned-gallery {
+      width: 100%;
+      overflow: hidden;
+    }
+
+    figure.slider {
+      position: relative;
+      width: 500%;
+      font-size: 0;
+      animation: 30s slidy infinite;
+    }
+
+    figure.slider figure {
+      width: 20%;
+      height: auto;
+      display: inline-block;
+      position: inherit;
+    }
+
+    figure.slider img {
+      width: 100%;
+      height: auto;
+    }
+
+    figure.slider figure figcaption {
+      position: absolute;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.4);
+      color: #fff;
+      width: 100%;
+      font-size: 2rem;
+      padding: .6rem;
+    }
+
+    .bg-lightblue {
+      background-color: #789bae;
+    }
+    .lightblue{
+      color: #789bae;
+    }
+
+    .bg-lightdark {
+      background-color: #585858;
+    }
+  </style>
+
+
+
+<!-- this styling for childern stuy section -->
+<style>
+ 
+
+  /* Header Section */
+  .header-section {
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .header-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .highlight {
+    color: #ffd900;
+  }
+
+  .header-description {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 15px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .donate-button {
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 1rem;
+    margin-top: 20px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  .donate-button:hover {
+    background-color: #ffb800;
+  }
+
+  /* Carousel Section */
+  .carousel-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 0;
+  }
+
+  .custom-carousel .carousel-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+  }
+
+  .carousel-card img {
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+  }
+
+  .carousel-card h5 {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    margin-top: 15px;
+    text-transform: uppercase;
+  }
+
+  .carousel-card p {
+    font-size: 0.9rem;
+    color: #666;
+    padding: 0 10px 15px 10px;
+  }
+
+  .carousel-card .underline {
+    height: 4px;
+    width: 60px;
+    background-color: #7698ab    ;
+    margin: 10px auto;
+  }
+
+  .owl-nav button {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #ffd900;
+    margin: 0 10px;
+  }
+
+  .owl-nav button:hover {
+    color: #ffb800;
+  }
+  /* Custom Navigation Arrows */
+.owl-nav {
+position: absolute;
+top: 50%;
+width: 100%;
+display: flex;
+justify-content: space-between;
+transform: translateY(-50%);
+}
+
+.owl-nav button {
+background: none;
+border: none;
+font-size: 2rem;
+color: white !important;
+padding: 10px;
+cursor: pointer;
+transition: all 0.3s ease;
+}
+
+.owl-nav button:hover {
+color: #ffb800;
+transform: scale(1.1);
+}
+
+.owl-nav .carousel-nav-prev {
+font-size: 2rem;
+transform: rotate(180deg); /* Rotate to make left arrow */
+}
+
+.owl-nav .carousel-nav-next {
+font-size: 2rem;
+}
+
+/* Optional: Custom background for arrow buttons */
+.owl-nav button:before {
+content: '';
+display: inline-block;
+width: 30px;
+height: 30px;
+background-color: rgb(0 0 0 / 32%) ;
+
+border-radius: 50%;
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+}
+
+.owl-nav button:hover:before {
+background-color: #ffb800;
+}
+
+</style>
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+
+  <div class="site-wrap" id="home-section">
+
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+  </div>
+
+
+
+
+  <div class="bg-lightblue py-3 top-bar shadow d-none d-md-block">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-md-left pl-0">
+          <!-- <a href="#" class=" pr-3 pl-0">Home</a>
+              <a href="#" class="p-3">Events</a>
+              <a href="#" class="p-3">Become A Volunteer</a> -->
+        </div>
+        <div class="col-md-6 text-md-right">
+          <a href="tel:+91 7291870264" class="p-1"><span class="icon-phone">
+            </span>: +91 7291870264</a>
+          <a href="mailto:manavkalyan665@gmail.com" class="p-1"><span class="icon-envelope"></span> :
+            manavkalyan665@gmail.com</a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <header class="site-navbar site-navbar-target bg-lightdark shadow" role="banner">
+
+    <div class="container">
+      <div class="row align-items-center position-relative">
+
+
+        <div class="site-logo">
+          <a href="index.html" class="text-white"><img src="./images/logo_rjf__1_-removebg-preview.png "
+              style="height: 6.5rem; width: 6.5rem;" alt=""></a>
+        </div>
+
+
+        <nav class="site-navigation text-left ml-auto " role="navigation">
+          <ul class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
+            <li class="active"><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About Us</a></li>
+            <li>
+              <div class="dropdown">
+                <button class="dropbtn">Our Projects</button>
+                <div class="dropdown-content">
+                  <a href="saveBirds.html">Save Birds & Animals</a>
+                  <a href="ayurvedik.html">Ayurveda and Naturopathy Center</a>
+                  <a href="gurukul.html">Gurukul Education Project</a>
+                  <a href="agriculture.html"> Manak Kalyan Agriculture</a>
+                  <a href="poorgirls.html"> Marriage For Poor Girls</a>
+                </div>
+              </div>
+            </li>
+            <!-- <li><a href="ourteam.html" class="nav-link">Our Team</a></li> -->
+            <!-- <li><a href="faq.html" class="nav-link">FAQ</a></li> -->
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+            <li>
+              <button class="btn  bg-lightblue">Donate us</button>
+            </li>
+          </ul>
+        </nav>
+
+
+        <div class="ml-auto toggle-button d-inline-block d-lg-none"><a href="#"
+            class="site-menu-toggle py-5 js-menu-toggle text-white"><span class="icon-menu h3 text-white"></span></a>
+        </div>
+
+
+
+      </div>
+    </div>
+
+  </header>
+
+
+
+
+  <!-- <div class="owl-carousel-wrapper">
+
+
+
+    <div class="box-92819">
+
+    </div>
+
+    <div class="owl-carousel owl-1 ">
+      <div class="ftco-cover-1 overlay img-fluid" style="background-image: url('images/Banner1_960x480_1.png');"></div>
+      <div class="ftco-cover-1 overlay img-fluid" style="background-image: url('images/Banner2_960x480_1.png');"></div>
+
+
+    </div>
+  </div> -->
+  <div id="captioned-gallery">
+    <figure class="slider">
+      <figure>
+        <img src="https://www.smilefoundationindia.org/wp-content/uploads/2023/04/7-1.jpg" alt>
+
+      </figure>
+      <figure>
+        <img src="https://im.whatshot.in/img/2020/Jun/istock-1130655067-cropped-1-1591264671.jpg" alt>
+
+      </figure>
+      <!-- <figure>
+        <img src="./images/Banner1_960x480_1.png" alt>
+
+      </figure>
+      <figure>
+        <img src="./images/Banner2_960x480_1.jfif" alt>
+
+      </figure>
+      <figure>
+        <img src="./images/Banner1_960x480_1.png" alt>
+
+      </figure> -->
+
+
+    </figure>
+  </div>
+
+
+
+  <div class="container">
+
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="cause shadow-sm p-sm-0 p-lg-5 ">
+
+
+          <img class="img-fluid" src="images/collage_imae.png" alt="">
+        </div>
+
+      </div>
+
+      <div class="col-md-6 ">
+
+        <div class="cause shadow-md p-2 mt-5">
+          <h3> About Us</h3>
+          <h1 class=" lightblue">We Serve The Society</h1>
+          <hr>
+          <p style="text-align: justify;">
+
+            With over 25 years of entrepreneurial experience,RJF (Rajendra Jha Foundation) has established a diverse group of companies
+            specializing in corporate project management and IT & telecom infrastructure services. As a founder member
+            of the Rajendra Jha Foundation (a Section 8 Company), RJF (Rajendra Jha Foundation) is committed to driving initiatives in
+            education, women empowerment, and cultural development. Hailing from an esteemed teaching family with deep
+            roots in RSS, RJF (Rajendra Jha Foundation) has been actively involved in community leadership and political engagement, having
+            worked closely with prominent leaders like Atal Bihari Vajpayee and L.K. Advani. A dedicated member of
+            various RSS initiatives,RJF (Rajendra Jha Foundation)continues to contribute to the betterment of society through both
+            professional and social endeavors.
+
+
+
+
+          </p>
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+  </div>
+
+
+<div  style="background-color: #fffbea;">
+   <div class="header-section">
+    <h2 class="header-title">What’s your way of making a <span class="lightblue"> difference for children</span> today?</h2>
+    <p class="header-description">
+      Every small contribution has the power to transform a child’s life. Your generosity enables us to create meaningful and lasting change for children across India!</p>
+    <button class="donate-button bg-lightblue">❤ Donate For Happier Childhoods!</button>
+  </div>
+
+  <!-- Carousel Section -->
+  <div class="carousel-container">
+    <div class="owl-carousel custom-carousel">
+      <!-- Card 1 -->
+      <div class="carousel-card">
+        <img src="https://s.yimg.com/uu/api/res/1.2/F.r6B7R8UqpLWt8EHkhYbQ--~B/aD0yMDAwO3c9MzAwMDtzbT0xO2FwcGlkPXl0YWNoeW9u/https://media-mbst-pub-ue1.s3.amazonaws.com/creatr-images/2019-06/f6a442a0-8cff-11e9-bcf3-5421633b4f77" alt="Support Kitchen Gardens">
+        <div>
+          <h5>Stop Child labour</h5>
+          <div class="underline"></div>
+          <p>Help Children go to School </p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="carousel-card">
+        <img src="https://img.freepik.com/premium-photo/portrait-happy-school-child-sitting-desk-classroom_979520-5022.jpg" alt="Poori Padhai">
+        <div>
+          <h5>Poori Padhai, Desh Ki Bhalai</h5>
+          <div class="underline"></div>
+          <p>Help girls complete their education</p>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="carousel-card">
+        <img src="https://sambalsamiti.in/Content/Image/e677795d55ca477b9d23eb45abcf14a6.jpg" alt="Send Children to School">
+        <div>
+          <h5>Send Children Back to School</h5>
+          <div class="underline"></div>
+          <p>If not now, they might never return</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <div class="site-section">
+    <div class="container">
+      <div class="heading-20219 mb-5">
+        <h2 class="title text-cursive ">Support our projects </h2>
+        <hr style="background-color: maroon; width: 100%; align-items: start;">
+
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="event-29191 mb-5">
+            <a href="#" class="d-block mb-3"><img src="images/Ayurvedic Project Image.png" alt="Image"
+                class="img-fluid rounded"></a>
+            <div class="px-3  bg-light">
+
+              <h3>AYURVEDA AND NATUROPATHY CENTER</h3>
+              <hr>
+              Ayurveda and Naturopathy look similar by the way of their approach towards healing. Both the sciences
+              adopt natural remedies for the cure, focus on detoxifying the body, encourage abstinence from unhealthy
+              lifestyle and promote using food as the medicine.
+              The main difference comes in the way foods are chosen.
+
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="event-29191 mb-5">
+            <a href="#" class="d-block mb-3"><img src="images/Save Birds and Animals Project Image.png" alt="Image"
+                class="img-fluid rounded"></a>
+            <div class="px-3  bg-light">
+
+              <h3>SAVE BIRDS & ANIMALS</h3>
+              <hr>
+              Manav kalyan have well skilled vet doctors and paramedical staff who are available 24X7 for bird and
+              animals treatment. We have well trained rescuing team with all rescue tools with the facility of 3
+              ambulances. Ambulance cover all Delhi-NCR for birds & large animals, also we have branch in Shahada
+              district Maharashtra.
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="event-29191 mb-5">
+            <a href="#" class="d-block mb-3"><img src="images/Manav Kalyan Agriculture Image.png" alt="Image"
+                class="img-fluid rounded"></a>
+            <div class="px-3  bg-light">
+
+              <h3>MANAV KALYAN AGRICULTURE</h3>
+              <hr>
+              Manav kalyan Agriculture farm is located on 100 Beegha field in Village Sunpura, Noida ext. which 50 Km
+              far from Indiragandhi International Airport, New Delhi, where we grow large crops of Millet(Bajra),
+              Maize
+              (Makka), Paddy(Dhaan), Wheat(Gehun). We grow many different types of fruit and vegetables, including
+              Mango, papaya, bananas, spinach, Bottlegaurd(Lauki), Pumpkin(Sitafal), etc. We are 100% organic, don’t
+              use
+              any pesticides, and make our own fertilizer and compost.
+
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="event-29191 mb-5">
+            <a href="#" class="d-block mb-3"><img src="images/Gurukul Education Image.png" alt="Image"
+                class="img-fluid rounded"></a>
+            <div class="px-3  bg-light">
+
+              <h3>GURUKUL EDUCATION PROJECT</h3>
+              <hr>
+              Gurukul is a Movement involved in integrated & holistic development of rural & tribal areas. At present
+              Manav kalyan is sponsoring a school in village Sunpura based in Greater Noida west.
+
+              The main activity undertaken in this movement is to run schools providing free but elite education all
+              over Bharat. Our aim is to provide high quality education in the remotest rural & tribal villages and
+              reach every child and no one is left uneducated.
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+
+
+  <!-- <div class="container">
+    <h1 class="text-cursive">Our Contribution</h1>
+    <hr style="background-color: maroon;">
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="container">
+          <video width="320" height="340" controls>
+            <source src="./videos/WhatsApp Video 2024-05-01 at 12.44.36.mp4" type="video/mp4">
+
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+      </div>
+
+      <div class="col-sm-4">
+        <video width="320" height="340" controls>
+          <source src="./videos/WhatsApp Video 2024-04-26 at 13.24.57.mp4" type="video/mp4">
+
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <div class="col-sm-4">
+        <video width="320" height="340" controls>
+          <source src="./videos/WhatsApp Video 2024-04-26 at 13.24.58.mp4" type="video/mp4">
+
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+
+    <div class="row mt-3">
+      <div class="col-sm-4">
+        <video width="320" height="340" controls>
+          <source src="./videos/WhatsApp Video 2024-04-26 at 13.24.59.mp4" type="video/mp4">
+
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <div class="col-sm-4">
+        <video width="320" height="340" controls>
+          <source src="./videos/WhatsApp Video 2024-04-26 at 13.25.00.mp4" type="video/mp4">
+
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <div class="col-sm-4">
+        <video width="320" height="340" controls>
+          <source src="./videos/WhatsApp Video 2024-05-01 at 12.43.36.mp4" type="video/mp4">
+
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </div> -->
+
+
+  <div class="site-section bg-image mt-5" style="background-image: url('images/img_1.jpg'); height: 400px;">
+    <div class="container">
+      <div class="row align-items-stretch">
+        <div class="col-md-12 text-center ">
+          <h1 style="color: white">
+            <p style="font-size: 40px;font-weight: 900;">Join our action!</p>
+            <p style="font-size: 60px;font-weight: 900;">Everyone can help </p>
+            <button class="btn btn-primary mt-5">Donate now!</button>
+            <hr>
+          </h1>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <footer class=" bg-dark">
+    <div class="row">
+      <div class="col-sm-5 p-5">
+        <!-- <a href="index.html" class="text-white"><img src="./images/logo_rjf__1_-removebg-preview.png "
+          style="height: 4.5rem; width: 4.5rem;" alt=""></a> -->
+        <h1 class=" mb-4" style="font-size: 45px ;color: white;"> Rajendra Jha Foundation</h1>
+        <hr>
+        <p style="color: white;">The MANAV KALYAN FOUNDATION, the subject matter of this profile, has been founded by
+          Mr. UMANG KUMAR
+          SHARMA, which in time is promoted by an eminent personality in the field of higher education. In view of
+          this promoters have gone in for capacity expansion and aim to increase the education, food, house, medical
+          facilities to the poor.</p>
+
+      </div>
+      <div class="col-sm-3 p-5">
+        <h1 class=" mb-4" style="font-size: 45px ;color: white;">Quick Links</h1>
+        <hr>
+        <ul class="list-unstyled">
+          <li><a href="about.html" style="color: white;">About Us</a></li>
+          <li><a href="ourteam.html" style="color: white;">Our Team</a></li>
+          <li><a href="terms.html" style="color: white;">Terms of Service</a></li>
+          <li><a href="policy.html" style="color: white;">Privacy</a></li>
+          <li><a href="faq.html" style="color: white;">FAQ</a></li>
+          <li><a href="contact.html" style="color: white;">Contact us</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-4 p-5">
+        <h1 class=" mb-4" style="font-size: 45px ;color: white">Contact Us</h1>
+        <hr>
+        <ul class="list-unstyled">
+          <li><a style="color: white;" href=""><span class="icon-building mx-1"></span> D-114-15, Gali No.- 04, Ganga
+              Vihar, Delhi, 110094</li></a>
+          <li><a style="color: white;" href="mailto:manavkalyan665@gmail.com" class="p-1"><span
+                class="icon-envelope"></span> :
+              manavkalyan665@gmail.com</a></li>
+          <li><a style="color: white;" href="tel:+91 7291870264" class="p-1"><span class="icon-phone">
+              </span>: +91 7291870264</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-md-6 text-center">
+        <p class="text-light">
+          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+          &copy;
+          <script>document.write(new Date().getFullYear());</script> All rights reserved by Manav Kalayan Foundation
+          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+        </p>
+
+      </div>
+      <div class="col-md-6 text-center ">
+        <p class="text-light">
+          This website is created by
+          <a style="color: white;" href="https://www.kanakdrishtiinfotec.in/" target="_blank">Kanak Drishti</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+
+  </div>
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.sticky.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/aos.js"></script>
+
+  <script src="js/main.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".custom-carousel").owlCarousel({
+        loop: true,
+        margin: 20,
+        nav: true,
+        dots: false,
+        navText: [
+          '<span class="carousel-nav-prev">&#8249;</span>',
+          '<span class="carousel-nav-next">&#8250;</span>'
+        ],
+        responsive: {
+          0: { items: 1 },
+          768: { items: 2 },
+          1200: { items: 3 },
+        },
+      });
+    });
+  </script>
+
+</body>
+
+</html>
