@@ -623,7 +623,7 @@ h1, h2, h3, h4, h5,
   right: 0;
   z-index: 2000;
   padding-top: 20px;
-  background: #fff;
+  background: #585858  ;
   height: calc(100vh);
   -webkit-transform: translateX(110%);
   -ms-transform: translateX(110%);
@@ -684,7 +684,7 @@ h1, h2, h3, h4, h5,
       padding: 10px 20px;
       display: block;
       position: relative;
-      color: #212529; }
+      color: white; }
       .site-mobile-menu .site-nav-wrap a:hover {
         color: #00a651; }
     .site-mobile-menu .site-nav-wrap li {
@@ -1188,10 +1188,10 @@ h1, h2, h3, h4, h5,
     color: #fff;
     border-bottom: 1px solid rgba(255, 255, 255, 0.5); }
 
-.slide {
+/* .slide {
   height: 100vh;
   min-height: 900px;
-  background-size: cover; }
+  background-size: cover; } */
 
 .btn-md {
   padding: 8px 20px; }
@@ -1266,7 +1266,7 @@ h1, h2, h3, h4, h5,
   position: static; }
 
 .owl-carousel-wrapper {
-  height: 100vh;
+  /* height: 100vh; */
   min-height: 600px;
   position: relative; }
 
@@ -1276,8 +1276,21 @@ h1, h2, h3, h4, h5,
   background-repeat: no-repeat;
   position: relative; }
   .ftco-cover-1, .ftco-cover-1 .container > .row {
-    height: 100vh;
+    /* height: 100vh; */
     min-height: 600px; }
+
+
+
+    @media screen and (min-device-width: 300px) and (max-device-width: 600px) { 
+      .ftco-cover-1, .ftco-cover-1 .container > .row {
+        /* height: 100vh; */
+        min-height: 300px; }
+        .owl-carousel-wrapper {
+          /* height: 100vh; */
+          min-height: 300px;
+          position: relative; }
+  }
+  
   .ftco-cover-1 > .container {
     position: relative; }
   .ftco-cover-1.overlay, .ftco-cover-1.overlay-2 {
@@ -1289,8 +1302,7 @@ h1, h2, h3, h4, h5,
       left: 0;
       right: 0;
       bottom: 0;
-      opacity: .3;
-      background: #000; }
+       }
     .ftco-cover-1.overlay h1, .ftco-cover-1.overlay-2 h1 {
       color: #fff;
       font-size: 3rem; }
@@ -1883,3 +1895,45 @@ h1, h2, h3, h4, h5,
         }
     }
     }
+
+
+
+
+    /* Navbar styling*/
+    .bg-lightblue {
+      background-color: #789bae;
+    }
+    .lightblue{
+      color: #789bae;
+    }
+
+    .bg-lightdark {
+      background-color: #585858;
+    }
+
+        /*-------------------------------- carosuel indicators------------------------- */
+
+    
+.carousel_img {
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .carousel_img {
+    height: 60vh;
+    object-fit: cover;
+  }
+}
+
+@media screen and (min-device-width: 300px) and (max-device-width: 600px) {
+  .carousel_img {
+    height: 30vh;
+    object-fit: cover;
+  }
+}
+
+.carousel-indicators{
+  display: none;
+}
