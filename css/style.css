@@ -2,6 +2,7 @@
 body{
   margin: 0%;
   padding: 0%;
+  overflow-x: hidden !important;
 }
 html {
   overflow-x: hidden; }
@@ -210,7 +211,7 @@ html {
 
 body {
   line-height: 1.7;
-  color: #364d59 !important;
+  /* color: #364d59 !important; */
   font-weight: 300;
   font-size: 1rem;
   background-color: #fff; }
@@ -1913,6 +1914,9 @@ h1, h2, h3, h4, h5,
 
         /*-------------------------------- carosuel indicators------------------------- */
 
+.icon-close2{
+  color: white;
+}
     
 .carousel_img {
   width: 100%;
@@ -1936,4 +1940,9 @@ h1, h2, h3, h4, h5,
 
 .carousel-indicators{
   display: none;
+}
+
+
+.dropdown-content a{
+  color: white !important;
 }
