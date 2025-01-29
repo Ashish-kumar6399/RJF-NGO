@@ -1946,3 +1946,13 @@ h1, h2, h3, h4, h5,
 .dropdown-content a{
   color: white !important;
 }
+
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  /* background: rgb(214, 205, 205); */
+  background-color: #21323b;
+  border-radius: 50%;
+}
